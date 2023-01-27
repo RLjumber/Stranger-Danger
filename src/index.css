@@ -1,13 +1,87 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #282c34;
+    color: white;
+    height: 50px;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  nav a:hover {
+    color: #61dafb;
+  }
+  nav a:active {
+    color: #61dafb;
+  }
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 2;
+    padding: 2;
+    justify-content: space-between;
+  }
+  nav li {
+    margin: 0 10px;
+  }
+  nav li a {
+    color: white;
+    text-decoration: none;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  /* Posts */
+
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .post-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #282c34;
+    border-radius: 5px;
+  }
+
+  /* end Posts */
+
+  /* sign up form start */
+  .sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25 vw;
+    max-width: 25 vw;
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #282c34;
+    border-radius: 5px;
+  }
+  .sign-up-form input {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #282c34;
+    border-radius: 5px;
+  }
+  .sign-up-form button {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #282c34;
+    border-radius: 5px;
+    background-color: #282c34;
+    color: white;
+  }
+  /* sign up form end */
