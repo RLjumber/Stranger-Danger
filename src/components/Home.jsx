@@ -1,9 +1,11 @@
-import React from 'react'
+import React from 'react';
+import Posts from './Posts';
 
 const Home = () => {
   return (
     <div>
-        <h2>hello from home</h2>
+        <h2 id="Welcome-to">Welcome to Stranger's Things</h2>
+        <Posts />
     </div>
   )
 }

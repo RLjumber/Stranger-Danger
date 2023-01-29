@@ -85,3 +85,11 @@ nav {
     color: white;
   }
   /* sign up form end */
+
+  /* home styling start */
+  #Welcome-to {
+    display: flex;
+    color: red;
+
+  }
+  /* home styling end */

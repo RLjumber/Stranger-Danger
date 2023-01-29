@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import CreatePost from './CreatePost';
 import Posts from './Posts';
 
 const BASE_URL = 'https://strangers-things.herokuapp.com/api/';
@@ -39,7 +40,7 @@ const Login = () => {
       console.log(data);
       setToken(data.token);
 
-      localStorage.getItem('token', data.token);
+      localStorage.setItem('token', data.token);
       console.log('token', data.token);
 
       console.log('welcome!');
@@ -76,6 +77,7 @@ const Login = () => {
     return (
         <div>
             <h2>You are logged in!</h2>
+                <CreatePost />
                 <Posts />
         </div>
     )
