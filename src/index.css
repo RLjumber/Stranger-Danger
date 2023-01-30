@@ -90,6 +90,6 @@ nav {
   #Welcome-to {
     display: flex;
     color: red;
-
+    justify-content: center;
   }
   /* home styling end */

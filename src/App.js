@@ -6,6 +6,7 @@ import Posts from "./components/Posts";
 import Profile from "./components/Profile";
 import SignUp from "./components/SignUp";
 import Login from './components/Login';
+import SinglePostView from './components/SinglePostView';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />}></Route>
         <Route path="profile" element={<Profile />}></Route>
         <Route path="posts" element={<Posts />}></Route>
+        <Route path="posts/:id" element={<SinglePostView />}></Route>
      </Routes>
 
     </div>
