@@ -14,7 +14,7 @@ const Posts = () => {
       .then(result => {
         setPosts(result.data.posts);
         setFilteredPosts(result.data.posts);
-        console.log('this is my data', result.data.posts);
+        // console.log('this is my data', result.data.posts);
       })
       .catch(console.error);
   }, []);
